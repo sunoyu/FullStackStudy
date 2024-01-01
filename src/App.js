@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Component } from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      My Todo Application Update
+      <FirstComponent></FirstComponent>
+      <SecondComponent></SecondComponent>
+      <ThirdComponent></ThirdComponent>
+      <FourthComponent></FourthComponent>
     </div>
   );
+}
+
+function FirstComponent() {
+  return <div className="FirstComponent"> First Component </div>;
+}
+
+function SecondComponent() {
+  return <div className="SecondComponent"> Second Component </div>;
+}
+
+class ThirdComponent extends Component {
+  // 클래스 컴포넌트
+  render() {
+    return <div className="ThirdComponent"> Third Component </div>;
+  }
+}
+
+class FourthComponent extends Component {
+  // 클래스 컴포넌트
+  render() {
+    return <div className="FourthComponent"> Fourth Component </div>;
+  }
 }
 
 export default App;
