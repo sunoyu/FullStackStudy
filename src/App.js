@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./components/counter/counter";
 
 // import FirstComponent from "./components/learning-examples/FirstComponent";
 // import { FifthComponent } from "./components/learning-examples/FirstComponent"; // 중괄호는 디폴트 컴포넌트를 가져오는게 아니라는 것을 의미
@@ -12,8 +13,9 @@ import LearningComponent from "./components/learning-examples/LearningComponent"
 function App() {
   return (
     <div className="App">
-      My Todo Application Update
-      <LearningComponent></LearningComponent>
+      {/* My Todo Application Update */}
+      {/* <LearningComponent></LearningComponent> */}
+      <Counter />
     </div>
   );
 }
