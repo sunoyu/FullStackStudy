@@ -1,16 +1,22 @@
+import { useState } from "react";
 import "./Counter.css";
 
 export default function Counter() {
+  // [0,f]
+  const [count, setCount] = useState(0); // hook
+
   function incrementCounterFunction() {
-    console.log("increment clicked");
+    setCount(count + 1);
+
+    console.log(count);
   }
 
   return (
     <div className="Counter">
-      <span className="count"> 0</span>
+      <span className="count"> {count}</span>
       <div>
         <button className="counterButton" onClick={incrementCounterFunction}>
-          button
+          +1
         </button>
       </div>
     </div>
